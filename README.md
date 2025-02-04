@@ -33,8 +33,8 @@ Methods of analysis range are summarised in the following table:
 | <span style="color:grey;">**Quantitative imaging**            | <span style="color:grey;">- Density and distribution analysis of CD20+ B-cells using entropy-based quantification and machine learning | <span style="color:grey;">- Correlates spatial localization of B-cells to resistance mechanisms and imaging biomarkers identified by deep learning.                                                      |
 
 ## Interesting finding from microarray data:
-(1) 105 genes related identified as overrepresented, and 5 pathways are found associated with B-cell pathways.
-(2) Non-parametric Mann-Whitney U-test is chosen to find the differentially expressed genes (DEGs), and the parametric Welch's t-test is computed for comparison in the Supplementary Information.
+(1) 105 genes related identified as overrepresented, and 5 pathways are found associated with B-cell pathways.<br>
+(2) Non-parametric Mann-Whitney U-test is chosen to find the differentially expressed genes (DEGs), and the parametric Welch's t-test is computed for comparison in the Supplementary Information.<br>
 
 ## Potential issues
  (1) **Comparison method**: 105 overrepresented genes are not recovered by pairwise comparison. Instead, asymptomatic and the combination of chronic controller, progressor, and non-infected mice are compared. This may:<br>
