@@ -47,11 +47,11 @@ Methods of analysis range are summarised in the following table:
  (6) **Enrichr**: Enrichr does not preserve all parent-child relationship among their hierarchy, and a cut-off level is implemented. By comparison, enrichGO does preserve all hierarchy. The two implementations have been found to recovered different number of genes in overrepresentation analysis ([Yu Lab](https://mp.weixin.qq.com/s/6lSsg2WMEK2btwve-9C2rA)). <br>
 
 ## Task
- (1) Perform Exploratory Data Analysis on the source CEL files, to test whether the choice of Mann-Whitney U-test over Bayesian moderation is valid based on two criteria: Normality and outliers. <br>
- (2) Perform an overrepresentation analysis on Biological Process using [GSE266564](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE266564) and [GPL16570](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GPL16570), which is an exploration to recreate the result from the article based on what may be considered as complete and equivalent data.<br>
+ (1) Perform Exploratory Data Analysis on the source CEL files, to test whether the choice of Mann-Whitney U-test over other methods such as Bayesian moderation is valid based on two criteria: Normality and outliers. <br>
+ (2) Perform an overrepresentation analysis on Biological Process using [GSE266564](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE266564) and [GPL16570](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GPL16570), which is an exploration to recreate the results from the article based on what is considered as complete and equivalent data.<br>
 
  ## Conclusion
  (1) The source data is non-normal with rare outlier, thus Mann-Whitney U-test is indeed preferred over Bayesian moderation or Welch's t-test. However, sample sizes are imbalanced among group, which may affect Mann-Whitney U-test. Brunner-Munzel test may be tried in the future.<br>
  (2) Of the 11 overrepresented genes reported in the asymptomatic group in the source article, 4 are recovered from this project, namely RAE1, BANK1, NUP107, and CD79B.<br>
- (3) Of the 11 overrepresented genes reported in the source article, asymptomatic controller do not show any of the 11 genes when compared to the chronic controller group.<br>
- (4) Many pathways are found to be overrepresented between asymptomatic controller show 249 genes with a wide range of pathways, instead of strict B-cell pathways.<br>
+ (3) Of the 11 overrepresented genes reported in the source article, asymptomatic controller does not show any of the 11 genes when compared to chronic controller.<br>
+ (4) Many pathways are found to be overrepresented between asymptomatic controller and other experimental groups, showing 249 genes with a wide range of pathways, instead of only B-cell pathways.<br>
