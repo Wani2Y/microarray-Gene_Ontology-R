@@ -1,5 +1,5 @@
 ## License
-Copyright (c) 2025 Yan-yin Wang
+Copyright (c) 2025 Wani2Y
 This repository is licensed under the MIT License.
 
 This script/notebook is free to use; you can redistribute it and/or modify it under the terms of the GNU General Public License,version 3, as published by the Free Software Foundation.
