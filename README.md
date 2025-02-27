@@ -4,8 +4,10 @@
 This project is a personal entertaiment and learning project.
 
 ## Description
-This project uses published molecular data to explore the relative abundance of biological processes in mice infected by $\textit{Mycobacterium tuberculosis}$ with three groups of doagnosible conditions. 
+This project uses published microarray molecular data to explore the relative abundance of biological processes in mice infected by $\textit{Mycobacterium tuberculosis}$ with three discrete categories of clinical conditions. 
 This project contains the R script for replicating the analysis and the RNoteBook for running the analysis by step. 
+An RNotebook is also provided to view partial results througout the anayosis without the need to fully run the script. The RNotebook also contains additional comments througout the analysis for teaching and learning purposes. 
+For non-R users, a rendered html is available for viewing the content of the RNotebook, but the html file will need to be downloaded to view locally. 
 The raw data is not provided in this project, but it is downloaded from GEO as part of the script. 
 A rendered html document is also provided for education purposes.
 
