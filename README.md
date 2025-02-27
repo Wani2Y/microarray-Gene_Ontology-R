@@ -18,7 +18,7 @@ This script/notebook is free to use; you can redistribute it and/or modify it un
 This notebook is distributed in the hope that it will serve educational and entertainment purposes, but without any warranty; without even the implied warranty of merchantability or fitness for a particular purpose. 
 Use of this code may be subjected to licensing agreement and copyright requirement of the Journal, Infection and Immunity.
 
-For more details of the license, please refer to: www.gnu.org/licenses/gpl-3.0.en.html.
+For more details of the license, please refer to MITlicense website (https://opensource.org/license/mit) and GNU general public license (www.gnu.org/licenses/gpl-3.0.en.html).
 
 ## Context
 In the source article, Diversity Outbred mice were infected with $\textit{Mycobacterium tuberculosis}$ (TB), in order to identify feature of asymptomatic TB infection using computational and statistical approach.
