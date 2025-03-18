@@ -4,7 +4,7 @@
 This project is a personal entertaiment and learning project.
 
 ## Description
-This project uses published microarray molecular data to explore the relative abundance of biological processes in mice infected by $\textit{Mycobacterium tuberculosis}$ with three discrete categories of clinical conditions. 
+This project uses published microarray molecular data to explore the relative abundance of biological processes in mice infected by *Mycobacterium tuberculosis* with three discrete categories of clinical conditions. 
 This project contains the R script for replicating the analysis and the RNoteBook for running the analysis by step. 
 An RNotebook is also provided to view partial results througout the anayosis without the need to fully run the script. The RNotebook also contains additional comments througout the analysis for teaching and learning purposes. 
 For non-R users, a rendered html is available for viewing the content of the RNotebook, but the html file will need to be downloaded to view locally. 
@@ -21,7 +21,7 @@ Use of this code may be subjected to licensing agreement and copyright requireme
 For more details of the license, please refer to MITlicense website (https://opensource.org/license/mit) and GNU general public license (www.gnu.org/licenses/gpl-3.0.en.html).
 
 ## Context
-In the source article, Diversity Outbred mice were infected with $\textit{Mycobacterium tuberculosis}$ (TB), in order to identify feature of asymptomatic TB infection using computational and statistical approach.
+In the source article, Diversity Outbred mice were infected with *Mycobacterium tuberculosis* (TB), in order to identify feature of asymptomatic TB infection using computational and statistical approach.
 Methods of analysis range are summarised in the following table:
 
 | **Source of Evidence**                                        | **Method of Analysis**                                                                                                                 | **Connection to Other Parts of the Article**                                                                                                                                                             |
