@@ -54,6 +54,7 @@ Methods of analysis range are summarised in the following table:
 
  ## Conclusion
  (1) The source data is non-normal with rare outlier, thus Mann-Whitney U-test is indeed preferred over Bayesian moderation or Welch's t-test. However, sample sizes are imbalanced among group, which may affect Mann-Whitney U-test. Brunner-Munzel test may be tried in the future.<br>
- (2) Of the 11 overrepresented genes reported in the asymptomatic group in the source article, 4 are recovered from this project, namely RAE1, BANK1, NUP107, and CD79B.<br>
- (3) Of the 11 overrepresented genes reported in the source article, asymptomatic controller does not show any of the 11 genes when compared to chronic controller.<br>
- (4) Many pathways are found to be overrepresented between asymptomatic controller and other experimental groups, showing 249 genes with a wide range of pathways, instead of only B-cell pathways.<br>
+ (2) Some overrepresented genes (e.g., Bank1, Rae1) lack annotations on [GPL16570](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GPL16570), which might be one of the reasons why the source article uses a custom annotation platform [GPL32068](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GPL32068). <br>
+ (3) Of the 11 overrepresented genes reported in the asymptomatic group in the source article, 4 are recovered from this project, namely RAE1, BANK1, NUP107, and CD79B.<br>
+ (4) Of the 11 overrepresented genes reported in the source article, asymptomatic controller does not show any of the 11 genes when compared to chronic controller.<br>
+ (5) Many pathways are found to be overrepresented between asymptomatic controller and other experimental groups, showing 249 genes with a wide range of pathways, instead of only B-cell pathways.<br>
