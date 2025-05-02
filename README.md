@@ -1,6 +1,7 @@
 # R script
 
 ## project "GO Enrichment analysis TB mice"
+This project falls within the realm of biomedical and bioinformatics research using publicly available data of mice model species.
 This project is a personal entertaiment and learning project.
 
 ## Description
