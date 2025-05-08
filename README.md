@@ -6,7 +6,7 @@ This project falls within the realm of biomedical and bioinformatics research us
 This project is a personal entertaiment and learning project.
 
 ## Description
-This project uses published microarray molecular data to explore the relative abundance of biological processes in mice infected by *Mycobacterium tuberculosis* with three discrete categories of clinical conditions([source article](https://pubmed.ncbi.nlm.nih.gov/38899881/)). 
+This project uses published microarray molecular data to explore the relative abundance of biological processes in mice infected by *Mycobacterium tuberculosis* with three discrete categories of clinical conditions ([source article](https://pubmed.ncbi.nlm.nih.gov/38899881/)). 
 This project contains the R script for replicating the analysis and the RNoteBook for running the analysis by step. 
 An RNotebook is also provided to view partial results througout the anayosis without the need to fully run the script. The RNotebook also contains additional comments througout the analysis for teaching and learning purposes. 
 For non-R users, a rendered html is available for viewing the content of the RNotebook, but the html file will need to be downloaded to view locally. 
