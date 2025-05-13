@@ -1,6 +1,6 @@
 # R script
 
-## project "GO Enrichment analysis TB mice"
+## project "Gene Ontology, Pathway Enrichment analysis on TB infected mice"
 This project falls within the realm of biomedical and bioinformatics research using publicly available data of mice model species.
 
 This project is a personal entertaiment and learning project.
@@ -9,14 +9,13 @@ This project is a personal entertaiment and learning project.
 This project uses published microarray molecular data to explore the relative abundance of biological processes in mice infected by *Mycobacterium tuberculosis* with three discrete categories of clinical conditions ([source article](https://pubmed.ncbi.nlm.nih.gov/38899881/)). 
 This project contains the R script for replicating the analysis. 
 An RNotebook is also provided to view partial results througout the anayosis without the need to fully run the script. The RNotebook also contains additional comments througout the analysis for teaching and learning purposes. 
-For non-R users, a rendered html is provided for viewing the result of the RNotebook, but the html file will need to be downloaded to view locally. 
-The raw data is not provided in this project, but it is downloaded from GEO as part of the script. 
-A rendered html document is also provided for education purposes.
+For non-R users, a rendered html is provided for viewing the code and result of the RNotebook, but the html file is decently large, and will need to be downloaded to view locally. 
+The raw data is not provided in this project, but it will be downloaded from GEO when script is run. 
 
 ## License
 This repository is licensed under the MIT License.
 
-This script/notebook is free to use; you can redistribute it and/or modify it under the terms of the GNU General Public License,version 3, as published by the Free Software Foundation.
+This script/notebook is free to use; you can redistribute it and/or modify it under the terms of the General Public License,version 3 (GNU), as published by the Free Software Foundation.
 This notebook is distributed in the hope that it will serve educational purposes, but without any warranty; without even the implied warranty of merchantability or fitness for a particular purpose. 
 Use of this code may be subjected to licensing agreement and copyright requirement of the Journal, Infection and Immunity.
 
