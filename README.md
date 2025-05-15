@@ -40,7 +40,7 @@ Methods of analysis used by the source article are summarised in the following t
 (2) Non-parametric Mann-Whitney U-test is chosen to find the differentially expressed genes (DEGs), and the parametric Welch's t-test is computed for comparison in the Supplementary Information.<br>
 
 ## Potential issues
- (1) **Comparison method**: 105 overrepresented genes are not recovered by pairwise comparison. Instead, asymptomatic and the combination of chronic controller, progressor, and non-infected mice are compared. This may:<br>
+ (1) **Comparison method**: 105 overrepresented genes are not recovered by pairwise comparison. Instead, asymptomatic and the combination of chronic controller, progressor, and non-infected mice are compared. This may cause negative impacts duch as:<br>
    1) Introduce noise in the data (e.g. masking distinct GO terms in chronic controller, progressor, and non-infected mice and distinct GO terms between asymptomatic and any one of the remaining groups)<br>
    2) Data from chronic controller, progressor, and non-infected may not be homogenous enough.<br>
  (2) **GEO data**: A subset of microarray data (i.e. [GSE179417]()) is said to be published elsewhere, which likely refers to the dataset under a different article. The complete microarray data is not linked in the article. The article name locates [GSE266564](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE266564) as the microarray data for this article. <br>
@@ -51,12 +51,12 @@ Methods of analysis used by the source article are summarised in the following t
 
 ## Tasks
  (1) Perform Exploratory Data Analysis on the source CEL files, to test whether the choice of Mann-Whitney U-test over other methods such as Bayesian moderation and Welch's t-test is valid based on two criteria: Normality and outliers. <br>
- (2) Using EnrichGO() and manual computation, perform an overrepresentation analysis on Biological Process using [GSE266564](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE266564) and [GPL16570](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GPL16570), which is an exploration to recreate the results from the article based on what is considered as complete and equivalent data.<br>
+ (2) Use EnrichGO() and manual computation to perform an overrepresentation analysis on Biological Process using [GSE266564](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE266564) and [GPL16570](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GPL16570), which is an exploration to recreate the results from the article based on what is considered as complete and equivalent data. <br>
 
  ## Conclusion
- (1) The raw CEL files show a high level of correlation even before normalisation, which may suggest the variability between groups is relatively low. By using rma() in this analysis, source data might have been over normalisaion, causing FoldChange computation issues. A better technique with higher sensitivity may be necessary for this source data.<br>
- (2) The source data is non-normal with rare outlier, thus Mann-Whitney U-test is indeed preferred over Bayesian moderation or Welch's t-test. However, sample sizes are imbalanced among group, which may affect Mann-Whitney U-test. Brunner-Munzel test may be tried in the future.<br>
+ (1) The raw CEL files show a high level of correlations even before normalisation, which may suggest the variability between groups is relatively low. By using rma() in this analysis, source data might have been over normalisaion, causing FoldChange computation issues (i.e. identical in value). A better technique with higher sensitivity may be necessary for this source data. <br>
+ (2) The source data is non-normal with rare outlier, thus Mann-Whitney U-test is indeed preferred over Bayesian moderation or Welch's t-test. However, sample sizes are imbalanced among group, which may affect Mann-Whitney U-test. Brunner-Munzel test or something similar may be worth trying in the future. <br>
  (3) Some overrepresented genes (e.g., Bank1, Rae1) lack annotations on [GPL16570](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GPL16570), which might be one of the reasons why the source article uses a custom annotation platform [GPL32068](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GPL32068). <br>
- (4) Of the 11 overrepresented genes reported in the asymptomatic group in the source article, 4 are recovered from this project, namely RAE1, BANK1, NUP107, and CD79B.<br>
- (5) Of the 11 overrepresented genes reported in the source article, asymptomatic controller does not show any of the 11 genes when compared to chronic controller.<br>
- (6) Many pathways are found to be overrepresented between asymptomatic controller and other experimental groups, showing 249 genes with a wide range of pathways, instead of only B-cell pathways.<br>
+ (4) Of the 11 overrepresented genes reported in the asymptomatic group in the source article, 4 are recovered from this project, namely RAE1, BANK1, NUP107, and CD79B. <br>
+ (5) Of the 11 overrepresented genes reported in the source article, asymptomatic controller does not show any of the 11 genes when compared to chronic controller. <br>
+ (6) Many pathways are found to be overrepresented between asymptomatic controller and other experimental groups, showing 249 genes with a wide range of pathways, instead of only B-cell pathways. <br>
