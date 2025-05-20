@@ -55,6 +55,7 @@ Methods of analysis used by the source article are summarised in the following t
 
  ## Conclusion
  (1) The raw CEL files show a high level of correlations even before normalisation, which may suggest the variability between groups is relatively low. By using rma() in this analysis, source data might have been over normalisaion, causing FoldChange computation issues (i.e. identical in value). A better technique with higher sensitivity may be necessary for this source data. <br>
+ ![load microarray data-1](https://github.com/user-attachments/assets/cddd6b7f-80ee-47c4-b8be-78f386309d9b)
  (2) The source data is non-normal with rare outlier, thus Mann-Whitney U-test is indeed preferred over Bayesian moderation or Welch's t-test. However, sample sizes are imbalanced among group, which may affect Mann-Whitney U-test. Brunner-Munzel test or something similar may be worth trying in the future. <br>
  (3) Some overrepresented genes (e.g., Bank1, Rae1) lack annotations on [GPL16570](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GPL16570), which might be one of the reasons why the source article uses a custom annotation platform [GPL32068](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GPL32068). <br>
  (4) Of the 11 overrepresented genes reported in the asymptomatic group in the source article, 4 are recovered from this project, namely RAE1, BANK1, NUP107, and CD79B. <br>
