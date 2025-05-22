@@ -40,7 +40,7 @@ Methods of analysis used by the source article are summarised in the following t
 (2) Non-parametric Mann-Whitney U-test is chosen to find the differentially expressed genes (DEGs), and the parametric Welch's t-test is computed for comparison in the Supplementary Information.<br>
 
 ## Potential issues
- (1) **Comparison method**: 105 overrepresented genes are not recovered by pairwise comparison. Instead, asymptomatic and the combination of chronic controller, progressor, and non-infected mice are compared. This may cause negative impacts duch as:<br>
+ (1) **Comparison method**: 105 overrepresented genes are not recovered by pairwise comparison. Instead, asymptomatic and the combination of chronic controller, progressor, and non-infected mice are compared. This may cause negative impacts such as:<br>
    1) Introduce noise in the data (e.g. masking distinct GO terms in chronic controller, progressor, and non-infected mice and distinct GO terms between asymptomatic and any one of the remaining groups)<br>
    2) Data from chronic controller, progressor, and non-infected may not be homogenous enough.<br>
  (2) **GEO data**: A subset of microarray data (i.e. [GSE179417]()) is said to be published elsewhere, which likely refers to the dataset under a different article. The complete microarray data is not linked in the article. The article name locates [GSE266564](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE266564) as the microarray data for this article. <br>
