@@ -9,10 +9,10 @@ This project falls within the realm of biomedical and bioinformatics research us
 This project is a project for testing reproducibility in the literature and education in bioinformatics. <br>
 
 ## Description
-This project uses published microarray molecular data to explore the relative abundance of genes and biological processes in mice infected by *Mycobacterium tuberculosis* with three discrete categories of clinical conditions ([source article](https://pubmed.ncbi.nlm.nih.gov/38899881/)). The goal is finding significant differences in genes that are related to various stages of infections (e.g. asymptomatic and chronic infections). <br>
+This project uses published microarray data to explore the relative abundance of genes and biological processes in mice infected by *Mycobacterium tuberculosis* with three discrete categories of clinical conditions ([source article](https://pubmed.ncbi.nlm.nih.gov/38899881/)). The goal is finding significant differences in genes that are related to various stages of infections (e.g. asymptomatic and chronic infections). <br>
 This project contains the R script for replicating the analysis. <br>
-An RNotebook is also provided to view partial results througout the analysis without the need to fully run the script. The RNotebook also contains additional comments througout the analysis for teaching and learning purposes. <br>
-For non-R users, a rendered html is provided for viewing the code and result of the RNotebook, but the html file is decently large, and will need to be downloaded to view locally. <br>
+An RNotebook is also provided to view partial results througout the analysis without the need to fully run the script. The RNotebook also contains additional reasoning and comments througout the analysis. <br>
+For non-R users, a rendered html file is provided for viewing the code and result of the RNotebook, but the html file will need to be downloaded to view locally. <br>
 The raw data is not provided in this project, but it will be downloaded from GEO when script is run. <br>
 
 ## License
