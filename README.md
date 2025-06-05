@@ -3,10 +3,10 @@
 ## project "Gene Ontology, Pathway Enrichment analysis on TB infected mice"
 This project falls within the realm of biomedical and bioinformatics research using publicly available data of mice model species.
 
-This project is a personal entertaiment and learning project.
+This project is a project for testing reproducibility in the literature and education in bioinformatics.
 
 ## Description
-This project uses published microarray molecular data to explore the relative abundance of biological processes in mice infected by *Mycobacterium tuberculosis* with three discrete categories of clinical conditions ([source article](https://pubmed.ncbi.nlm.nih.gov/38899881/)). 
+This project uses published microarray molecular data to explore the relative abundance of genes and biological processes in mice infected by *Mycobacterium tuberculosis* with three discrete categories of clinical conditions ([source article](https://pubmed.ncbi.nlm.nih.gov/38899881/)). The goal is finding significant differences in genes that are related to various stages of infections (e.g. asymptomatic and chronic infections). <br>
 This project contains the R script for replicating the analysis. 
 An RNotebook is also provided to view partial results througout the analysis without the need to fully run the script. The RNotebook also contains additional comments througout the analysis for teaching and learning purposes. 
 For non-R users, a rendered html is provided for viewing the code and result of the RNotebook, but the html file is decently large, and will need to be downloaded to view locally. 
@@ -15,14 +15,14 @@ The raw data is not provided in this project, but it will be downloaded from GEO
 ## License
 This repository is licensed under the MIT License.
 
-This script/notebook is free to use; you can redistribute it and/or modify it under the terms of the General Public License,version 3 (GNU), as published by the Free Software Foundation.
+This script/notebook/rendered html are all free to use; you can redistribute them and/or modify them under the terms of the General Public License,version 3 (GNU), as published by the Free Software Foundation.
 This notebook is distributed in the hope that it will serve educational purposes, but without any warranty; without even the implied warranty of merchantability or fitness for a particular purpose. 
-Use of this code may be subjected to licensing agreement and copyright requirement of the Journal, Infection and Immunity.
+Use of this code may be subjected to licensing agreement and copyright requirement of the Journal, [Infection and Immunity](https://journals.asm.org/).
 
-For more details of the license, please refer to MITlicense website (https://opensource.org/license/mit) and GNU general public license (www.gnu.org/licenses/gpl-3.0.en.html).
+For more detail information of the MIT and GNU licenses, please refer to MITlicense website (https://opensource.org/license/mit) and GNU general public license (www.gnu.org/licenses/gpl-3.0.en.html).
 
 ## Context
-In the source article, Diversity Outbred mice were infected with *Mycobacterium tuberculosis* (TB), in order to identify feature of asymptomatic TB infection using experimental, computational, and statistical approach.
+In the source article, Diversity Outbred mice were infected with *Mycobacterium tuberculosis* (TB), to identify features of asymptomatic TB infection using experimental, computational, and statistical approach.
 Methods of analysis used by the source article are summarised in the following table:
 
 | **Source of Evidence**                                        | **Method of Analysis**                                                                                                                 | **Connection to Other Parts of the Article**                                                                                                                                                             |
@@ -36,7 +36,7 @@ Methods of analysis used by the source article are summarised in the following t
 | <span style="color:grey;">**Quantitative imaging**            | <span style="color:grey;">- Density and distribution analysis of CD20+ B-cells using entropy-based quantification and machine learning | <span style="color:grey;">- Correlates spatial localization of B-cells to resistance mechanisms and imaging biomarkers identified by deep learning.                                                      |
 
 ## Interesting finding from microarray data:
-(1) 105 genes are identified as overrepresented, and 5 pathways are found associated with B-cell pathways.<br>
+(1) 105 genes are identified as overrepresented/enriched, and 5 pathways are found associated with B-cell pathways.<br>
 (2) Non-parametric Mann-Whitney U-test is chosen to find the differentially expressed genes (DEGs), and the parametric Welch's t-test is computed for comparison in the Supplementary Information.<br>
 
 ## Potential issues
