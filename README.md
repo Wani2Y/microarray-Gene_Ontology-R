@@ -22,7 +22,7 @@ This script/notebook/rendered html are all free to use; you can redistribute the
 This notebook is distributed in the hope that it will serve educational purposes, but without any warranty; without even the implied warranty of merchantability or fitness for a particular purpose. 
 Use of this code may be subjected to licensing agreement and copyright requirement of the Journal, [Infection and Immunity](https://journals.asm.org/).
 
-For more detail information of the MIT and GNU licenses, please refer to MITlicense website (https://opensource.org/license/mit) and GNU general public license (www.gnu.org/licenses/gpl-3.0.en.html).
+For more detail information of the MIT and GNU licenses, please refer to [MITlicense website](https://opensource.org/license/mit) and [GNU general public license](www.gnu.org/licenses/gpl-3.0.en.html).
 
 ## Context
 In the source article, Diversity Outbred mice were infected with *Mycobacterium tuberculosis* (TB), to identify features of asymptomatic TB infection using experimental and computational approaches.
@@ -39,8 +39,8 @@ Methods of analysis used by the source article are summarised in the following t
 | <span style="color:grey;">**Quantitative imaging**            | <span style="color:grey;">- Density and distribution analysis of CD20+ B-cells using entropy-based quantification and machine learning | <span style="color:grey;">- Correlates spatial localization of B-cells to resistance mechanisms and imaging biomarkers identified by deep learning.                                                      |
 
 ## Interesting finding from microarray data:
-(1) 105 genes are identified as overrepresented/enriched, and 5 pathways are found associated with B-cell pathways.<br>
-(2) Non-parametric Mann-Whitney U-test is chosen to find the differentially expressed genes (DEGs), and the parametric Welch's t-test is computed for comparison in the Supplementary Information.<br>
+(1) 105 genes are identified as overrepresented/enriched, and 5 pathways are found associated with B-cell pathways. <br>
+(2) Non-parametric Mann-Whitney U-test is chosen to find the differentially expressed genes (DEGs), and the parametric Welch's t-test is computed for comparison in the Supplementary Information. <br>
 
 ## Potential issues
  (1) **Comparison methods**: 105 overrepresented genes are not recovered by pairwise comparison. Instead, asymptomatic and the combination of chronic controller, progressor, and non-infected mice are compared. This may cause negative impacts such as:<br>
