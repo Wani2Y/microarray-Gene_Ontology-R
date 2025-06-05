@@ -45,7 +45,7 @@ Methods of analysis used by the source article are summarised in the following t
 ## Potential issues
  (1) **Comparison methods**: 105 overrepresented genes are not recovered by pairwise comparison. Instead, asymptomatic and the combination of chronic controller, progressor, and non-infected mice are compared. This may cause negative impacts such as:<br>
    1) Introduce noise in the data (e.g. masking distinct GO terms in chronic controller, progressor, and non-infected mice) <br>
-   2) Data from chronic controller, progressor, and non-infected may not be homogenous enough. <br>
+   2) Data from chronic controller, progressor, and non-infected may not be homogenous enough.
  (2) **GEO data**: A subset of microarray data (i.e. [GSE179417]()) is said to be published elsewhere, which likely refers to the dataset under a different article. The complete microarray data is not linked in the article. The article name locates [GSE266564](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE266564) as the microarray data for this article. <br>
  (3) **GEO annotation platform**:  [GSE266564](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE266564) uses platform [GPL32068](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GPL32068) for annotating the microarray data. [GPL32068](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GPL32068) is described as identical to [GPL16570](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GPL16570) but the table dimension/attributes and number of rows are not the same. <br>
  (4) **R script**: The R script to perform overrepresentation/enrichment analysis is not provided in the article (i.e. no file in Supplementary Information or GitHub link). <br>
