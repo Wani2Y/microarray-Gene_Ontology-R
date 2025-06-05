@@ -1,16 +1,19 @@
-# R script
+# Bioinformatic Research Project
+
+## Packages used
+
+## Stakeholder relevance
 
 ## project "Gene Ontology, Pathway Enrichment analysis on TB infected mice"
-This project falls within the realm of biomedical and bioinformatics research using publicly available data of mice model species.
-
-This project is a project for testing reproducibility in the literature and education in bioinformatics.
+This project falls within the realm of biomedical and bioinformatics research using publicly available data of mice model species. <br>
+This project is a project for testing reproducibility in the literature and education in bioinformatics. <br>
 
 ## Description
 This project uses published microarray molecular data to explore the relative abundance of genes and biological processes in mice infected by *Mycobacterium tuberculosis* with three discrete categories of clinical conditions ([source article](https://pubmed.ncbi.nlm.nih.gov/38899881/)). The goal is finding significant differences in genes that are related to various stages of infections (e.g. asymptomatic and chronic infections). <br>
-This project contains the R script for replicating the analysis. 
-An RNotebook is also provided to view partial results througout the analysis without the need to fully run the script. The RNotebook also contains additional comments througout the analysis for teaching and learning purposes. 
-For non-R users, a rendered html is provided for viewing the code and result of the RNotebook, but the html file is decently large, and will need to be downloaded to view locally. 
-The raw data is not provided in this project, but it will be downloaded from GEO when script is run. 
+This project contains the R script for replicating the analysis. <br>
+An RNotebook is also provided to view partial results througout the analysis without the need to fully run the script. The RNotebook also contains additional comments througout the analysis for teaching and learning purposes. <br>
+For non-R users, a rendered html is provided for viewing the code and result of the RNotebook, but the html file is decently large, and will need to be downloaded to view locally. <br>
+The raw data is not provided in this project, but it will be downloaded from GEO when script is run. <br>
 
 ## License
 This repository is licensed under the MIT License.
@@ -22,7 +25,7 @@ Use of this code may be subjected to licensing agreement and copyright requireme
 For more detail information of the MIT and GNU licenses, please refer to MITlicense website (https://opensource.org/license/mit) and GNU general public license (www.gnu.org/licenses/gpl-3.0.en.html).
 
 ## Context
-In the source article, Diversity Outbred mice were infected with *Mycobacterium tuberculosis* (TB), to identify features of asymptomatic TB infection using experimental, computational, and statistical approach.
+In the source article, Diversity Outbred mice were infected with *Mycobacterium tuberculosis* (TB), to identify features of asymptomatic TB infection using experimental and computational approaches.
 Methods of analysis used by the source article are summarised in the following table:
 
 | **Source of Evidence**                                        | **Method of Analysis**                                                                                                                 | **Connection to Other Parts of the Article**                                                                                                                                                             |
@@ -40,18 +43,18 @@ Methods of analysis used by the source article are summarised in the following t
 (2) Non-parametric Mann-Whitney U-test is chosen to find the differentially expressed genes (DEGs), and the parametric Welch's t-test is computed for comparison in the Supplementary Information.<br>
 
 ## Potential issues
- (1) **Comparison method**: 105 overrepresented genes are not recovered by pairwise comparison. Instead, asymptomatic and the combination of chronic controller, progressor, and non-infected mice are compared. This may cause negative impacts such as:<br>
-   1) Introduce noise in the data (e.g. masking distinct GO terms in chronic controller, progressor, and non-infected mice and distinct GO terms between asymptomatic and any one of the remaining groups)<br>
-   2) Data from chronic controller, progressor, and non-infected may not be homogenous enough.<br>
+ (1) **Comparison methods**: 105 overrepresented genes are not recovered by pairwise comparison. Instead, asymptomatic and the combination of chronic controller, progressor, and non-infected mice are compared. This may cause negative impacts such as:<br>
+   1) Introduce noise in the data (e.g. masking distinct GO terms in chronic controller, progressor, and non-infected mice) <br>
+   2) Data from chronic controller, progressor, and non-infected may not be homogenous enough. <br>
  (2) **GEO data**: A subset of microarray data (i.e. [GSE179417]()) is said to be published elsewhere, which likely refers to the dataset under a different article. The complete microarray data is not linked in the article. The article name locates [GSE266564](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE266564) as the microarray data for this article. <br>
- (3) **GEO annotation platform**:  [GSE266564](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE266564) uses platform [GPL32068](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GPL32068) for annotating the microarray data. [GPL32068](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GPL32068) is described as identical to [GPL16570](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GPL16570) but the table dimension/attributes and number of rows are not the same.<br>
- (4) **R script**: The R script to perform overrepresentation analysis is not provided in the article (i.e. no file in Supplementary Information or GitHub link).<br>
- (5) **DEG computation**: The choice of Mann-Whitney U-test over Welch's t-test and Bayesian moderation is seemly not specified in the article, though we may presume the choice is based on the lack of assumption on normality of the underlying data.<br>
- (6) **Enrichr**: Enrichr does not preserve all parent-child relationship among their hierarchy during computation of the gene ontology terms, and a cut-off level is implemented implicitly. By comparison, enrichGO does preserve all hierarchy. The two implementations have been found to recovered different number of genes in overrepresentation analysis ([Yu Lab](https://mp.weixin.qq.com/s/6lSsg2WMEK2btwve-9C2rA)). Thus, the use of different computational methods may lead to different results of overrepresentation.<br>
+ (3) **GEO annotation platform**:  [GSE266564](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE266564) uses platform [GPL32068](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GPL32068) for annotating the microarray data. [GPL32068](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GPL32068) is described as identical to [GPL16570](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GPL16570) but the table dimension/attributes and number of rows are not the same. <br>
+ (4) **R script**: The R script to perform overrepresentation/enrichment analysis is not provided in the article (i.e. no file in Supplementary Information or GitHub link). <br>
+ (5) **DEG computation**: The choice of Mann-Whitney U-test over Welch's t-test and Bayesian moderation is seemly not specified in the article, though we may presume the choice is based on the lack of assumption on normality of the underlying data. <br>
+ (6) **Enrichr**: Enrichr does not preserve all parent-child relationship among their hierarchy during computation of the gene ontology terms, and a cut-off level is implemented implicitly. By comparison, enrichGO does preserve all hierarchy. The two implementations have been found to recovered different number of genes in overrepresentation analysis ([Yu Lab](https://mp.weixin.qq.com/s/6lSsg2WMEK2btwve-9C2rA)). Thus, the use of different computational methods may lead to different results of overrepresentation. <br>
 
-## Tasks
+## Objectives
  (1) Perform Exploratory Data Analysis on the source CEL files, to test whether the choice of Mann-Whitney U-test over other methods such as Bayesian moderation and Welch's t-test is valid based on two criteria: Normality and outliers. <br>
- (2) Use EnrichGO() and manual computation to perform an overrepresentation analysis on Biological Process using [GSE266564](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE266564) and [GPL16570](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GPL16570), which is an exploration to recreate the results from the article based on what is considered as complete and equivalent data. <br>
+ (2) Use EnrichGO() from the package ClusterProfiler and manual computation to perform an overrepresentation analysis on Biological Process using [GSE266564](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE266564) and [GPL16570](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GPL16570), which is an exploration to recreate the results from the article based on what is considered as complete and equivalent data. <br>
 
  ## Conclusion
  (1) The raw CEL files show a high level of correlations even before normalisation, which may suggest the variability between groups is relatively low. By using rma() in this analysis, source data might have been over normalisaion, causing FoldChange computation issues (i.e. identical in value). A better technique with higher sensitivity may be necessary for this source data. <br>
